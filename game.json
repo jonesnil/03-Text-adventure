@@ -1,0 +1,244 @@
+{
+  "verbs": [
+    {
+      "v": "EXITS",
+      "map": "EXITS"
+    },
+    {
+      "v": "EXIT",
+      "map": "EXIT"
+    },
+    {
+      "v": "QUIT",
+      "map": "QUIT"
+    },
+    {
+      "v": "HELP",
+      "map": "HELP"
+    },
+    {
+      "v": "ASTRONOMY",
+      "map": "ASTRONOMY"
+    },
+    {
+      "v": "ATRIUM",
+      "map": "ATRIUM"
+    },
+    {
+      "v": "CATWALK",
+      "map": "CATWALK"
+    },
+    {
+      "v": "DINOSAURS",
+      "map": "DINOSAURS"
+    },
+    {
+      "v": "ANCIENT",
+      "map": "ANCIENT"
+    },
+    {
+      "v": "ART",
+      "map": "ART"
+    },
+    {
+      "v": "UPSTAIRS",
+      "map": "UPSTAIRS"
+    },
+    {
+      "v": "DOWNSTAIRS",
+      "map": "DOWNSTAIRS"
+    },
+    {
+      "v": "UTILITY",
+      "map": "UTILITY"
+    },
+    {
+      "v": "BUILD",
+      "map": "BUILD"
+    },
+    {
+      "v": "TAKE",
+      "map": "TAKE"
+    }
+  ],
+  "rooms": {
+    "Ancient Tools": {
+      "name": "Ancient",
+      "desc": "The air feels musty in here, as if in a cave millennia ago. You feel connected to your ancestors as you look around\r\nat the evolution of human technology. From crude spears and stone wheels to the modern iPhone, you see in closed cases\r\nsome of the history of human achievement.",
+      "exits": [
+        {
+          "condition": "You break a glass case, with your bare hand no less (I will spare you the description of that aftermath)\r\nand remove a large stone spear reproduction, based on one found at a dig site. Do you have any idea what effort was put\r\nin to obtain these sorts of things, all for history's sake? What can you even do with this?",
+          "target": "(Reproduction) Ancient Spear",
+          "verb": "TAKE"
+        },
+        {
+          "verb": "EXIT",
+          "target": "Upstairs",
+          "condition": ""
+        }
+      ],
+      "inventory": []
+    },
+    "Art": {
+      "desc": "You take a deep breath as you enter the art exhibit in solitude. Some things here are better without the crowds,\r\nand there are many beautiful pieces of art on the walls around you.",
+      "exits": [
+        {
+          "verb": "TAKE",
+          "target": "Art",
+          "condition": "Ahh, This is a fine painting. You gaze awestruck at the 19th century craftsmanship before you. And now\r\n you're grabbing the edges of the painting and attempting to steal it. Thats not just gonna come off, you know. Maybe we should just- *THUD* You fall on your back with the painting in your hands, now pressed on your chest. It is\r\nhard to tell what it was depicting now, the paint smushed from the fall."
+        },
+        {
+          "verb": "EXIT",
+          "target": "Upstairs",
+          "condition": ""
+        }
+      ],
+      "inventory": [],
+      "name": "Art"
+    },
+    "Astronomy": {
+      "desc": "You enter the exhibit and it is, for a few seconds, completely dark. As you stumble aimlessly inside, some dim lights \r\nturn on revealing the solar system around you. Mercury being about the size of a basketball and Jupiter the size of \r\na car, the planets hang around you, dimly lit by what seems to be an accurate smattering of stars above and under them.",
+      "exits": [
+        {
+          "verb": "ATRIUM",
+          "target": "Atrium",
+          "condition": ""
+        },
+        {
+          "verb": "CATWALK",
+          "target": "Catwalk",
+          "condition": ""
+        }
+      ],
+      "inventory": [],
+      "name": "Astronomy Exhibit"
+    },
+    "Atrium": {
+      "name": "Atrium",
+      "desc": "You return to the atrium, and the first thing you notice is the large fountain in the center. The place is still \r\nunsettlingly empty. Left of the entrance to the museum is the astronomy exhibit, and to the right is the dinosaur one. \r\nBetween them past the fountain is a staircase up.",
+      "exits": [
+        {
+          "verb": "ASTRONOMY",
+          "target": "Astronomy",
+          "condition": ""
+        },
+        {
+          "verb": "DINOSAURS",
+          "target": "Paleontology",
+          "condition": ""
+        },
+        {
+          "verb": "UPSTAIRS",
+          "target": "Upstairs",
+          "condition": "You climb the stairs and reach a platform with a few more exhibit entrances. On your left is what looks like an art\r\nexhibit with many paintings, and on your right you see something about ancient tools?"
+        },
+        {
+          "verb": "BUILD",
+          "target": "",
+          "condition": "Here you are, lugging a small Earth on your back by a string, holding a painting in your left hand, as\r\nwell as a spear, and a dinosaur bone in your right hand. All in front of a fountain that is completely overflowed\r\nthanks to you. But why are you carrying those things? If you're going to steal them just leave.\r\nOr do you just hate museums?\r\nDo you have some tragic backstory where your friends were killed in a museum accident?\r\nNow you're... stabbing the painting into the Earth using the spear. Ok, the painting and the Earth are together.\r\nNO! That painting was an original, it could've been restored, you threw it in the fountain.\r\nAre you... climbing onto the painting? And now you're using the dinosaur bone as an oar, as if the Earth was a boat.\r\nThe museum is opening, security is heading for you. I'm just gonna pretend I have any idea why you did that and close\r\nthe game here.\r\nYou go to jail. FIN"
+        }
+      ],
+      "inventory": []
+    },
+    "Catwalk": {
+      "desc": "I didn't mention that, but yes, I suppose if you look closely at some stars in the distance you can faintly see a \r\nladder leading to a catwalk that goes above the planets, likely for maintenance. For some reason you climb it and are \r\nnow in what is obviously a restricted area.",
+      "exits": [
+        {
+          "verb": "ASTRONOMY",
+          "target": "Astronomy",
+          "condition": "Thank goodness, you finally climb down and return to the peaceful astronomy exhibit, and are again enchanted by the \r\naccurate stars. You can see the morning light from the atrium at the exit."
+        },
+        {
+          "verb": "TAKE",
+          "target": "Earth",
+          "condition": "Haha, why are you opening your mouth like that? Wait, are you chewing the string holding up that planet? Good lord,\r\nthat's nylon. Ok, well you did it. You cut the string. What are you going to do with that, that Earth is \r\nnearly twice your size? Oh, you're just going to carry that around by the string? O-Ok."
+        }
+      ],
+      "inventory": [],
+      "name": "Astronomy Exhibit"
+    },
+    "Paleontology": {
+      "name": "Atrium",
+      "desc": "You walk under the dinosaur skull into a large room filled with set-up dinosaur fossils. Plaques everywhere tell you\r\nabout the lives and environments of these amazing creatures. In the center of the display stands the Jurassic-Park\r\nadorned king of the dinosaurs, the mighty Tyrannosaurus Rex.",
+      "exits": [
+        {
+          "verb": "ATRIUM",
+          "target": "Atrium",
+          "condition": ""
+        },
+        {
+          "verb": "TAKE",
+          "target": "Dinosaur Bone",
+          "condition": "Take? Take what? What are you doing OH MY GOODNESS you've... you've taken one of the T.Rex's leg bones. Why? \r\nThats- Yes, it's collapsed. Many of the bones have broken from the fall. That was the real article you know.\r\nYou owe the museum a lot of money, and if I'm being honest that relic was priceless..."
+        }
+      ],
+      "inventory": []
+    },
+    "START": {
+      "name": "we're starting this thing",
+      "desc": "You wake up in a large room that appears to be part of a museum? Based on the light from the windows it is early \r\nmorning. There is a large fountain in front of you in the center of this huge open-roofed room, and you see the \r\nentrance to what looks like a dark space exhibit, as well as an entrance adorned with a T.Rex Skull. A large staircase\r\nup sits between them. Strangely, no one is here.",
+      "exits": [
+        {
+          "verb": "ASTRONOMY",
+          "target": "Astronomy",
+          "condition": ""
+        },
+        {
+          "verb": "DINOSAURS",
+          "target": "Paleontology",
+          "condition": ""
+        },
+        {
+          "verb": "UPSTAIRS",
+          "target": "Upstairs",
+          "condition": "You climb the stairs and reach a platform with a few more exhibit entrances. On your left is what looks like an art\r\nexhibit with many paintings, and on your right you see something about ancient tools?"
+        }
+      ],
+      "inventory": []
+    },
+    "Upstairs": {
+      "name": "Upstairs",
+      "desc": "You are on a platform with a few exhibit entrances. Left of the stairs is what looks like an art\r\nexhibit with many paintings, and on the right you see something about ancient tools?",
+      "exits": [
+        {
+          "verb": "ART",
+          "target": "Art",
+          "condition": ""
+        },
+        {
+          "verb": "ANCIENT",
+          "target": "Ancient Tools",
+          "condition": ""
+        },
+        {
+          "verb": "DOWNSTAIRS",
+          "target": "Atrium",
+          "condition": ""
+        },
+        {
+          "verb": "UTILITY",
+          "target": "Utility",
+          "condition": ""
+        }
+      ],
+      "inventory": []
+    },
+    "Utility": {
+      "name": "Utility",
+      "desc": "No that's fine, I wanted you to notice that, thats why I *mentioned* it. You enter a discrete employees only door and\r\nare met with many screens and buttons and dials, with a lone chair in front. This must be a utility room of\r\nsome sort, you should go back to enjoying the museum experience before you're caught here.",
+      "exits": [
+        {
+          "verb": "TAKE",
+          "target": "Fountain Valve",
+          "condition": "Why do you look like you know what you're doing? You're looking intently at that valve... and now you're\r\nhitting it with the chair. It's off now, and it sounds like that expensive fountain in the atrium is overflowing.\r\nCongratulations?"
+        },
+        {
+          "verb": "EXIT",
+          "target": "Upstairs",
+          "condition": ""
+        }
+      ],
+      "inventory": []
+    }
+  }
+    }
