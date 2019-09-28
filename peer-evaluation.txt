@@ -1,0 +1,38 @@
+Name: Landon Ferneau
+Date: 09/28/2019
+Project: Text Adventure
+Peer's repository: https://github.com/lferneau/03-Text-adventure-1.git
+
+
+
+What is something you learned by reviewing your peer's project?
+
+ I got an idea of how to incorporate an inventory system.
+
+What is something you saw in your peer's project that you would like to apply to your own programming projects?
+
+ I really like how he implemented an inventory system in a comedic fashion. 
+
+What suggestions would you have for your peer to improve his/her code?
+
+ There were one or two grammatical mistakes that could be fixed. Also, I played it a second time with the intention of just fixing the fountain and not going to jail, but that appeared to be the only ending.
+
+What could have been clearer or better commented?
+
+ I didn't notice anything. The game was really enjoyable, and I had a great time playing it.
+
+Was there anything in the code that was confusing to you? If so, what?
+
+ The inventory system.
+
+Does the repository contain an appropriate LICENSE?
+
+ Yes
+
+What is something he/she could add to the README.md to make it more descriptive?
+
+ Maybe he could describe why he thinks that main.py is a mess
+
+Pay a compliment to your peer based on the quality of his/her code.
+
+The dialogue was witty and enjoyable. The use of the items at the end was amazing and a great parady inventory systems. I really enjoyed this game.
